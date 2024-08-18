@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>McDonald</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <section class="prices">
+        <div>
+          <h5>جمع کل سفارشات:</h5>
+          <p id="orderPrices"></p>
+        </div>
+        <div>
+          <h5>حق سرویس و کارمزد:</h5>
+          <p id="ServiceFees"></p>
+        </div>
+        <div>
+          <h5>تخفیف:</h5>
+          <p id="discount"></p>
+        </div>
+        <div class="takhfif">
+          <input type="text" list="discountOrder" id="discountInput" placeholder="کد تخفیف" />
+          <datalist id="discountOrder">
+            <option value="gold"></option>
+            <option value="silver"></option>
+            <option value="bronze"></option>
+          </datalist>
+          <button id="discountSubmit"><i class="fa fa-check"></i></button>
+        </div>
+        <div class="final">
+          <h5>مبلغ قابل پرداخت:</h5>
+          <p id="finalPrice"></p>
+        </div>
+        <div class="submit">
+          <button id="finalSubmit">ثبت سفارش</button>
+        </div>
+      </section>
+     
+      <section class="resturant">
+        <h2>رستوران مک دونالد شعبه تهران</h2>
+        <div class="menu">
+          
+
+          <div id="uid_1">
+            <div><img src="img/hamburger.png" alt="" /></div>
+            <div class="detail">
+              <h5>همبرگر مخصوص</h5>
+              <h6 class="price">10000 تومان</h6>
+              <div class="numbers" >
+                <div class="buttons" data-index="1">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum" id="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_2">
+            <div><img src="img/hamburger.png" alt="" /></div>
+            <div class="detail">
+              <h5>همبرگر معمولی</h5>
+              <h6 class="price">8000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="2">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_3">
+            <div><img src="img/hamburger.png" alt="" /></div>
+            <div class="detail">
+              <h5>همبرگر مخصوص با قارچ و پنیر</h5>
+              <h6 class="price">20000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="3">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_4">
+            <div><img src="img/hamburger.png" alt="" /></div>
+            <div class="detail">
+              <h5>همبرگر معمولی با قارچ و پنیر</h5>
+              <h6 class="price">10000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="4">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_5">
+            <div><img src="img/french_fries.png" alt="" /></div>
+            <div class="detail">
+              <h5>سیب زمینی سرخ کرده</h5>
+              <h6 class="price">10000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="5">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_6">
+            <div><img src="img/french_fries.png" alt="" /></div>
+            <div class="detail">
+              <h5>سیب زمینی سرخ کرده ویژه</h5>
+              <h6 class="price">25000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="6">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_7">
+            <div><img src="img/soda.png" alt="" /></div>
+            <div class="detail">
+              <h5>نوشابه</h5>
+              <h6 class="price">5000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="7">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_8">
+            <div><img src="img/soda.png" alt="" /></div>
+            <div class="detail">
+              <h5>نوشابه رژیمی</h5>
+              <h6 class="price">6000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="8">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_9">
+            <div><img src="img/ceasar.png" alt="" /></div>
+            <div class="detail">
+              <h5>سالاد سزار</h5>
+              <h6 class="price">25000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="9">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="uid_10">
+            <div><img src="img/salad.png" alt="" /></div>
+            <div class="detail">
+              <h5>سالاد فصل</h5>
+              <h6 class="price">8000 تومان</h6>
+              <div class="numbers">
+                <div class="buttons" data-index="10">
+                  <button class="minus">-</button>
+                  <p class="sum_number">0</p>
+                  <button class="plus">+</button>
+                </div>
+                <div class="sum"><p>0 تومان</p></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <footer></footer>
+      </section>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal" style="display: none;">
+      <p>سفارش شما با موفقیت ثبت شد.</p>
+      <button id="submitModal">باشه</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
